@@ -6,3 +6,12 @@ Hi, I'm learning MySQL from zero. Daily notes + queries here.
 | Day | Topic | Status |
 | --- | --- | --- |
 | Day-01 | Installation + Create Table | ✅ Done |
+
+## SQL Day 2:
+
+### Topics Covered
+- CREATE TABLE
+- ALTER TABLE - ADD / MODIFY / RENAME / DROP Column
+- DELETE FROM - Delete Data
+- DROP TABLE - Delete Entire Table
+
