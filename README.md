@@ -15,3 +15,7 @@ Hi, I'm learning MySQL from zero. Daily notes + queries here.
 - DELETE FROM - Delete Data
 - DROP TABLE - Delete Entire Table
 
+## SQl Day 3:
+-insertion
+-deletion
+
