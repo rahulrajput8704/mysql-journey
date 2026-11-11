@@ -19,3 +19,8 @@ Hi, I'm learning MySQL from zero. Daily notes + queries here.
 -insertion
 -deletion
 
+
+##Sql Day 4:
+- where clause
+- update clause 
+- use of and,or, between 
