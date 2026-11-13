@@ -29,3 +29,9 @@ Hi, I'm learning MySQL from zero. Daily notes + queries here.
 practice of clause 
 -insertion
 -update
+
+#sql Day 5:
+practice of where clause
+-and/or
+-between
+-order by/limit
