@@ -35,3 +35,7 @@ practice of where clause
 -and/or
 -between
 -order by/limit
+
+
+#sql day 6:
+practice of delete keyword 
