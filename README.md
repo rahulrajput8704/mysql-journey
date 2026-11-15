@@ -39,3 +39,10 @@ practice of where clause
 
 #sql day 6:
 practice of delete keyword 
+
+#sql day 7:
+
+Learn about Function 
+1.count
+2.Sum
+3.Min and max
