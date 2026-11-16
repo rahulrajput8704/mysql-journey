@@ -46,3 +46,11 @@ Learn about Function
 1.count
 2.Sum
 3.Min and max
+
+
+#Sql day 8:
+proceed function part:
+1.Average
+2.mod
+3.concat
+3.length
