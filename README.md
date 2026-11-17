@@ -54,3 +54,10 @@ proceed function part:
 2.mod
 3.concat
 3.length
+
+
+#sql day 9
+learnt autcommit 
+- rollback and commit
+
+and Condition if
