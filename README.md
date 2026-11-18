@@ -61,3 +61,7 @@ learnt autcommit
 - rollback and commit
 
 and Condition if
+
+
+#sql day 10
+learn about foreign key 
