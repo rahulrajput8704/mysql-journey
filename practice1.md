@@ -20,3 +20,42 @@ UPDATE students SET city = 'Pune', age = 20 WHERE id = 3;
 UPDATE students SET city = 'Kanpur' WHERE marks < 80;
 UPDATE students SET age = age + 1;
 UPDATE students SET name = 'Priya Sharma' WHERE id = 2 AND marks > 85;
+
+
+
+
+# SQL Practice -  | ORDER BY + GROUP BY
+
+## Table: std2
+| name | course | marks |
+| :--- | :--- | :--- |
+| Aman | Java | 85 |
+| Rahul | Java | 78 |
+| Anjali | Java | 95 |
+| Priya | Python | 92 |
+| Vikash | Python | 65 |
+| Sneha | SQL | 88 |
+
+## Queries
+-- Q7. Har course me kitne students hai?
+select course, count(*) from std2 group by course;
+-- Result: Java - 3, Python - 2, SQL - 1
+
+-- Q8. Har course ka average marks
+select course, avg(marks) as average from std2 group by course;
+-- Result: Java - 86, Python - 78.5, SQL - 88
+
+-- Q9. Sirf Java walo ka average
+select avg(marks) as java_average from std2 where course = 'Java';
+-- Result: 86.0000
+
+-- Q10. Sabse zyada marks wala student
+select name, marks from std2 order by marks desc limit 1;
+-- Result: Anjali - 95
+
+-- Q11. Pehle course A-Z, fir usi course me marks zyada se kam
+select name, course, marks from std2 order by course asc, marks desc;
+
+## Key Learnings
+-- 1. ASC = A-Z / Chhota se Bada (Default), DESC = Z-A / Bada se Chhota
+-- 2.
