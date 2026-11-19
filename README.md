@@ -65,3 +65,8 @@ and Condition if
 
 #sql day 10
 learn about foreign key 
+
+#sql day 10(practice day)
+-max,min
+-order by
+- count(*)
