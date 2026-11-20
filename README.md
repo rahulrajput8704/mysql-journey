@@ -70,3 +70,6 @@ learn about foreign key
 -max,min
 -order by
 - count(*)
+
+#sql day 11
+learn about foreign key more
