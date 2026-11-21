@@ -23,3 +23,37 @@ INNER JOIN fee ON std3.student_id = fee.student_id;
 SELECT name, amount FROM std3
 LEFT JOIN fee ON std3.student_id = fee.student_id;
 -- Output: Rahul-5000, Priya-6000, amit-NULL
+
+
+
+21 November 2026--- Day: Foreign Keys Practice
+
+-- 1. CASCADE: Parent delete -> Child auto-delete
+CREATE TABLE channel (id INT PRIMARY KEY AUTO_INCREMENT, name VARCHAR(50));
+CREATE TABLE video (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  title VARCHAR(100),
+  channel_id INT,
+  FOREIGN KEY (channel_id) REFERENCES channel(id)
+  ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+-- 2. SET NULL: Parent delete -> Child bachega, FK NULL ho jayega
+CREATE TABLE users (id INT PRIMARY KEY AUTO_INCREMENT, name VARCHAR(50));
+CREATE TABLE post (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  caption VARCHAR(100),
+  user_id INT,
+  FOREIGN KEY (user_id) REFERENCES users(id)
+  ON DELETE SET NULL ON UPDATE CASCADE
+);
+
+-- 3. RESTRICT: Parent delete nahi hoga jab tak Child hai
+CREATE TABLE author (id INT PRIMARY KEY AUTO_INCREMENT, name VARCHAR(50));
+CREATE TABLE book (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  title VARCHAR(100),
+  author_id INT,
+  FOREIGN KEY (author_id) REFERENCES author(id)
+  ON DELETE RESTRICT ON UPDATE CASCADE
+);
