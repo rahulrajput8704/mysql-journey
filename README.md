@@ -73,3 +73,9 @@ learn about foreign key
 
 #sql day 11
 learn about foreign key more
+
+#sql day 12
+*practice 
+1.cascade
+2.set null
+3.restrict
