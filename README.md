@@ -79,3 +79,8 @@ learn about foreign key more
 1.cascade
 2.set null
 3.restrict
+
+
+#sql day 13
+*practice 
+foreign key + join
