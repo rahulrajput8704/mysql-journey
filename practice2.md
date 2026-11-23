@@ -57,3 +57,28 @@ CREATE TABLE book (
   FOREIGN KEY (author_id) REFERENCES author(id)
   ON DELETE RESTRICT ON UPDATE CASCADE
 );
+
+
+23 November 2026--- Q1 INNER JOIN
+SELECT employee.emp_name, department.dept_name
+FROM employee
+INNER JOIN department ON employee.dept_id = department.dept_id;
+
+-- Q2 LEFT JOIN
+SELECT employee.emp_name, department.dept_name
+FROM employee
+LEFT JOIN department ON employee.dept_id = department.dept_id;
+
+-- Q3 RIGHT JOIN
+SELECT employee.emp_name, department.dept_name
+FROM employee
+RIGHT JOIN department ON employee.dept_id = department.dept_id;
+
+-- Q4 FULL JOIN using UNION
+SELECT employee.emp_name, department.dept_name
+FROM employee
+LEFT JOIN department ON employee.dept_id = department.dept_id
+UNION
+SELECT employee.emp_name, department.dept_name
+FROM employee
+RIGHT JOIN department ON employee.dept_id = department.dept_id;
