@@ -84,3 +84,7 @@ learn about foreign key more
 #sql day 13
 *practice 
 foreign key + join
+
+#sql day 14
+*practice 
+foreign key + union
