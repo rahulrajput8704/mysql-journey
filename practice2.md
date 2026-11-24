@@ -82,3 +82,28 @@ UNION
 SELECT employee.emp_name, department.dept_name
 FROM employee
 RIGHT JOIN department ON employee.dept_id = department.dept_id;
+
+
+24 November 2026-
+# Self Join - Short Notes
+
+## 1. What is Self Join?
+Joining a table with itself.
+Used when Employee and Manager are in the same table.
+
+We give the same table 2 different names, so MySQL does not get confused.
+- `e` = Employee copy
+- `m` = Manager copy
+
+## 2. Golden Rules
+- Never write a column without alias, it will give an error. Always use `e.` or `m.`
+- Order can be changed: `e.manager_id = m.emp_id` = `m.emp_id = e.manager_id`
+- Order is always: `JOIN -> ON -> WHERE`
+- `WHERE` never comes before `ON`.
+
+## 3. Q1 - Employee + His Manager
+```sql
+SELECT e.name AS employee, m.name AS manager
+FROM employees AS e
+LEFT JOIN employees AS m
+ON e.manager_id = m.emp_id;
