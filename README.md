@@ -88,3 +88,6 @@ foreign key + join
 #sql day 14
 *practice 
 foreign key + union
+
+#sql day 15
+- self join
