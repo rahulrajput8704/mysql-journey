@@ -91,3 +91,6 @@ foreign key + union
 
 #sql day 15
 - self join
+
+#sql day 16
+- view + join
