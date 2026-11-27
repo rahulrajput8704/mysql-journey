@@ -94,3 +94,6 @@ foreign key + union
 
 #sql day 16
 - view + join
+
+#sql day 17
+-view + join(practice)
